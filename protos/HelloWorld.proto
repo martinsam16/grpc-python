@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package myPackage;
+
+// The greeting service definition.
+service SaludarService {
+  // Sends a greeting
+  rpc SaludarRpc (HelloRequest) returns (HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string mensajeRequest = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string mensajeRespuesta = 1;
+}
