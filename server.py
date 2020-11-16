@@ -1,7 +1,7 @@
 import grpc
 
-import HelloWorld_pb2
-import HelloWorld_pb2_grpc
+from generado import HelloWorld_pb2_grpc
+from generado import HelloWorld_pb2
 
 from concurrent import futures
 
